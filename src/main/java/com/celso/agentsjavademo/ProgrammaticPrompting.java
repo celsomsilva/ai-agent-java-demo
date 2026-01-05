@@ -3,12 +3,30 @@ package com.celso.agentsjavademo;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * ProgrammaticPrompting
+ *
+ * This class demonstrates a **programmatic LLM interaction**
+ * from a Java application using a locally hosted LLaMA-based model.
+ *
+ * The prompt is constructed explicitly in code and sent to a
+ * local LLM server via HTTP. This is **not** an interactive chat
+ * or web-based example.
+ *
+ * This example is inspired by concepts from the
+ * "AI Agents in Java" course by Jules White, but the implementation
+ * has been reorganized and adapted to work with a local LLM
+ * (TinyLLaMA) instead of OpenAI APIs.
+ */
+
+
+
+
 public class ProgrammaticPrompting {
 
-    //
-    // Set your API key as shown in the GitHub repository
-    // export OPENAI_API_KEY="your-api-key"
-    //
+    
+    
     public static void main(String[] args) {
 
         LLM llm = new LLM();
@@ -27,6 +45,8 @@ public class ProgrammaticPrompting {
         messages.add(new Message("user", prompt));
         
         System.out.println("User: " + prompt);
+        
+        System.out.println();
         
         System.out.print("TinyLLaMA: ");
 

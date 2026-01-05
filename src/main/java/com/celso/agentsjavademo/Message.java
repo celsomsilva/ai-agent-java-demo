@@ -1,5 +1,22 @@
 package com.celso.agentsjavademo;
 
+
+
+/**
+ * Message
+ *
+ * Simple data structure representing a message exchanged
+ * with a Large Language Model (LLM).
+ *
+ * This abstraction is intentionally minimal and provider-agnostic,
+ * allowing the application to remain decoupled from any specific
+ * LLM API or SDK.
+ *
+ * Supported roles typically include: "system", "user", and "assistant".
+ */
+
+
+
 public class Message {
 
     private String role;
