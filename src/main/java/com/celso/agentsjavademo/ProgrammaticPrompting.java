@@ -36,10 +36,9 @@ public class ProgrammaticPrompting {
 
         // Add system message
         messages.add(new Message("system",
-                "You are an expert software engineer that prefers functional programming."));
+                "You are a cook ready to help a housewife."));
                 
-        String prompt = "Write a Java method that swaps the keys and values of a Map<K, V>. " +
-        "Assume values are unique.";
+        String prompt = "What are the ingredients of a cake?";
 
         // Add user message
         messages.add(new Message("user", prompt));

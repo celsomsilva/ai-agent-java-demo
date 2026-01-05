@@ -69,7 +69,7 @@ Once the LLM server is running, execute:
 and wait a few seconds or minutes (depending on your machine).
 
 The LLaMA model will answer the prompt:
-"Write a Java method that swaps the keys and values of a Map<K, V>. Assume values are unique."
+"What are the ingredients of a chocolate cake?"
 
 Note: TinyLlama can make mistakes. Check out this important information.
 
