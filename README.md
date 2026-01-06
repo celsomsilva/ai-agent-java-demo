@@ -1,8 +1,16 @@
-
 ## AI Agent Java Demo (Local LLaMA)
 
-This repository contains a **standalone Java example**
-demonstrating programmatic prompting using a **local LLaMA-based LLM**.
+This repository contains a **standalone Java example** demonstrating direct integration with a **local LLaMA-based LLM**.
+
+The purpose of this example is to demonstrate the **core integration boundary**
+between a Java application and a Large Language Model (LLM):
+- programmatic prompt construction
+- plain HTTP communication
+- explicit request/response handling
+- no frameworks or SDK abstractions
+
+This project intentionally focuses on **clarity and mechanics** rather than
+features, scalability, or production concerns.
 
 ---
 
