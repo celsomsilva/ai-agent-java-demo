@@ -76,8 +76,10 @@ Once the LLM server is running, execute:
 ```
 and wait a few seconds or minutes (depending on your machine).
 
+
+Its System Prompt: "You are a cook ready to help a housewife."
 The LLaMA model will answer the prompt:
-"What are the ingredients of a chocolate cake?"
+"What are the ingredients of a cake?"
 
 Note: TinyLlama can make mistakes. Check out this important information.
 
