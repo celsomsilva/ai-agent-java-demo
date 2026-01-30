@@ -36,7 +36,7 @@ public class ProgrammaticPrompting {
 
         // Add system message
         messages.add(new Message("system",
-                "You are a cook ready to help a housewife."));
+                "You are a cook ready to help with everyday cooking questions."));
                 
         String prompt = "What are the ingredients of a cake?";
 

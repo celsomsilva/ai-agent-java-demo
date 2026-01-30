@@ -36,6 +36,9 @@ public class LLM {
  *
  * @param messages list of user/system messages used to build the prompt
  * @return generated model response as plain text
+ *
+ * The message model used by this class is immutable,
+ * ensuring safe prompt construction and predictable behavior.
  */
 
 
@@ -62,7 +65,8 @@ public class LLM {
      
     public String generateResponse(List<Message> messages) {
 
-        String prompt = buildPrompt(messages);
+	String prompt = PromptBuilder.build(messages);
+
         String requestBody = buildRequestBody(prompt);
 
         try {
@@ -82,35 +86,6 @@ public class LLM {
         }
     }
 
-    /*
-     * Prompt construction	
-     */
-     
-    private String buildPrompt(List<Message> messages) {
-        StringBuilder sb = new StringBuilder();
-
-        sb.append("""
-        Answer the user's question directly and clearly.
-        Do not repeat the question.
-        Do not add unnecessary explanations.
-
-        """);
-
-        for (Message m : messages) {
-            sb.append(cap(m.getRole()))
-              .append(": ")
-              .append(m.getContent())
-              .append("\n");
-        }
-
-        sb.append("Assistant:");
-        return sb.toString();
-    }
-
-    private static String cap(String s) {
-        return s.substring(0, 1).toUpperCase() + s.substring(1);
-    }
-    
 
     /*
      *  JSON request (proper escaping, only here)	

@@ -1,11 +1,9 @@
 package com.celso.agentsjavademo;
 
-
-
 /**
  * Message
  *
- * Simple data structure representing a message exchanged
+ * Immutable value object representing a message exchanged
  * with a Large Language Model (LLM).
  *
  * This abstraction is intentionally minimal and provider-agnostic,
@@ -14,32 +12,5 @@ package com.celso.agentsjavademo;
  *
  * Supported roles typically include: "system", "user", and "assistant".
  */
+public record Message(String role, String content) {}
 
-
-
-public class Message {
-
-    private String role;
-    private String content;
-
-    public Message(String role, String content) {
-        this.role = role;
-        this.content = content;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-}
