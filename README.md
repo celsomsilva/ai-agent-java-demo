@@ -2,15 +2,14 @@
 
 This repository contains a **standalone Java example** demonstrating direct integration with a **local LLaMA-based LLM**.
 
-The purpose of this example is to demonstrate the **core integration boundary**
-between a Java application and a Large Language Model (LLM):
+
+The purpose of this example is to demonstrate the **core integration boundary** between a Java application and a Large Language Model (LLM):
 - programmatic prompt construction
 - plain HTTP communication
 - explicit request/response handling
 - no frameworks or SDK abstractions
 
-This project intentionally focuses on **clarity and mechanics** rather than
-features, scalability, or production concerns.
+This project intentionally focuses on **clarity and mechanics** rather than features, scalability, or production concerns.
 
 ---
 
@@ -30,6 +29,13 @@ ai-agent-java-demo/
               ProgrammaticPrompting.java
               LLM.java
               Message.java
+     test/
+      java/
+        com/
+          celso/
+            agentsjavademo/
+              ProgrammaticPromptingTest.java
+              LLMTest.java
 
   README.md
   LICENSE
@@ -47,15 +53,13 @@ ai-agent-java-demo/
 
 ### Run
 
-This project requires a **locally running LLaMA-compatible server**
-exposing an OpenAI-compatible API at:
+This project requires a **locally running LLaMA-compatible server** exposing an OpenAI-compatible API at:
 
 http://localhost:8080
 
 
 Step 1 — Start the local LLM server
-Start a local LLaMA server (for example, using llama.cpp / llama-server)
-with a TinyLLaMA model.
+Start a local LLaMA server (for example, using llama.cpp / llama-server) with a TinyLLaMA model.
 
 Example command:
 
@@ -84,6 +88,20 @@ The LLaMA model will answer the prompt:
 Note: TinyLlama can make mistakes. Check out this important information.
 
 
+---
+
+### Run tests
+
+
+The tests do **not** require a running LLM. An in-memory mock HTTP server is used instead.
+
+
+``` bash
+gradlew test
+```
+
+---
+
 
 ### How this works
 
@@ -92,18 +110,15 @@ Note: TinyLlama can make mistakes. Check out this important information.
 - The response is received and processed by the Java runtime
 - There is no browser, notebook, or interactive UI involved
 
-This is an example of **LLM integration at the application level**,
-similar to how LLMs are used in production systems.
+This is an example of **LLM integration at the application level**, similar to how LLMs are used in production systems.
 
 
 ### Notes
 
-This project is inspired by concepts from the
-**"AI Agents in Java"** course by Jules White.
+This project is inspired by concepts from the **"AI Agents in Java"** course by Jules White.
 
 The original examples rely on OpenAI API keys.
-In this repository, the code was reorganized and adapted
-to work with a **locally hosted LLaMA-compatible LLM (TinyLLaMA)**.
+In this repository, the code was reorganized and adapted to work with a **locally hosted LLaMA-compatible LLM (TinyLLaMA)**.
 
 ---
 
