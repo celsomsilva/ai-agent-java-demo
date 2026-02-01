@@ -34,11 +34,12 @@ ai-agent-java-demo/
         com/
           celso/
             agentsjavademo/
-              ProgrammaticPromptingTest.java
-              LLMTest.java
+              MessageTest.java
+              PromptBuilderTest.java
 
   README.md
   LICENSE
+  .gitattributes
 ```
 
 ---
@@ -78,10 +79,10 @@ Once the LLM server is running, execute:
 ```bash
 ./gradlew run
 ```
-and wait a few seconds or minutes (depending on your machine).
+and wait a few seconds or minutes (depending on your machine and prompt/system prompt).
 
 
-Its System Prompt: "You are a cook ready to help a housewife."
+Its System Prompt: "You are a cook ready to help with everyday cooking questions."
 The LLaMA model will answer the prompt:
 "What are the ingredients of a cake?"
 
@@ -93,11 +94,11 @@ Note: TinyLlama can make mistakes. Check out this important information.
 ### Run tests
 
 
-The tests do **not** require a running LLM. An in-memory mock HTTP server is used instead.
+The tests do **not** require a running LLM. HTTP-level tests can be added later using an in-memory mock server.
 
 
 ``` bash
-gradlew test
+./gradlew test
 ```
 
 ---
