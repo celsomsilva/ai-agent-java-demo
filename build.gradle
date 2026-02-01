@@ -28,11 +28,13 @@ repositories {
 }
 
 dependencies {
-    // Jackson (ObjectMapper)
+    // Jackson (ObjectMapper). Localized in LLM.java to parsing JSON
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.2'
+    
     
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
     
+     // Reserved for future HTTP-level tests (LLM boundary)
     testImplementation 'com.squareup.okhttp3:mockwebserver:4.12.0'
 }
 
