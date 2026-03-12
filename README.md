@@ -1,4 +1,4 @@
-## AI Agent Java Demo (Local LLaMA)
+## LLM Agent Java (Local LLaMA)
 
 > “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero - USP
 
@@ -18,7 +18,7 @@ This project intentionally focuses on **clarity and mechanics** rather than feat
 ## Repository Layout
 
 ```
-ai-agent-java-demo/
+llm-agent-java/
   build.gradle
   settings.gradle
 
@@ -139,4 +139,4 @@ This project was developed by an engineer and data scientist with a background i
 ## Contact  
 
 - [LinkedIn](https://linkedin.com/in/celso-m-silva)  
-- Or open an [issue](https://github.com/celsomsilva/ai-agent-java-demo/issues)
+- Or open an [issue](https://github.com/celsomsilva/llm-agent-java/issues)

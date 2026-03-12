@@ -1,4 +1,4 @@
-package com.celso.agentsjavademo;
+package com.celso.llmagentjava;
 
 
 import com.fasterxml.jackson.databind.JsonNode;

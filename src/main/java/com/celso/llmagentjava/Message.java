@@ -1,4 +1,4 @@
-package com.celso.agentsjavademo;
+package com.celso.llmagentjava;
 
 /**
  * Message

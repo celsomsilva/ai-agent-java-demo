@@ -1,6 +1,9 @@
-package com.celso.agentsjavademo;
+package com.celso.llmagentjava;
 
 import org.junit.jupiter.api.Test;
+
+import com.celso.llmagentjava.Message;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 

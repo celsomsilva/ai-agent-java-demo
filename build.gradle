@@ -20,7 +20,7 @@ java {
 }
 
 application {
-    mainClass = 'com.celso.agentsjavademo.ProgrammaticPrompting'
+    mainClass = 'com.celso.llmagentjava.ProgrammaticPrompting'
 }
 
 repositories {
